@@ -5,7 +5,7 @@ mkDerivation {
   pname = "reform-happstack";
   version = "0.2.5";
   src = ./.;
-  buildDepends = [
+  libraryHaskellDepends = [
     base bytestring happstack-server mtl random reform text utf8-string
   ];
   homepage = "http://www.happstack.com/";
