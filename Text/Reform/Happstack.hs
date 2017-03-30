@@ -5,7 +5,6 @@ Support for using Reform with the Haskell Web Framework Happstack. <http://happs
 module Text.Reform.Happstack where
 
 import Control.Applicative                 (Applicative((<*>)), Alternative, (<$>), (<|>), (*>), optional)
-import Control.Applicative.Indexed         (IndexedApplicative(..))
 import Control.Monad                       (msum, mplus)
 import Control.Monad.Trans                 (liftIO)
 import Data.ByteString.Lazy                (ByteString)
