@@ -5,14 +5,14 @@ let
   inherit (nixpkgs) pkgs;
 
   f = { mkDerivation, base, bytestring, happstack-server, mtl
-      , random, reform, stdenv, text, utf8-string
+      , random, reform, stdenv, text, utf8-string, cabal-install
       }:
       mkDerivation {
         pname = "reform-happstack";
         version = "0.2.5";
         src = ./.;
         libraryHaskellDepends = [
-          base bytestring happstack-server mtl random reform text utf8-string
+          base bytestring happstack-server mtl random reform text utf8-string cabal-install
         ];
         homepage = "http://www.happstack.com/";
         description = "Happstack support for reform";
