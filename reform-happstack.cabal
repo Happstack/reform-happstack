@@ -20,7 +20,7 @@ source-repository head
 Library
   Default-language:    Haskell2010
   Exposed-modules:     Text.Reform.Happstack
-  Build-depends:       base >4 && <5,
+  Build-depends:       base >=4 && <5,
                        bytestring       >= 0.9 && < 0.13,
                        happstack-server >= 7.0 && < 7.10,
                        mtl              >= 2.0 && < 2.4,
